@@ -144,6 +144,7 @@ return [
 		'Collective\Providers\ConfigServiceProvider',
 		'Collective\Providers\EventServiceProvider',
 		'Collective\Providers\RouteServiceProvider',
+		'Collective\Providers\MailChimpServiceProvider',
 
 	],
 

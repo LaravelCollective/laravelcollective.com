@@ -85,7 +85,7 @@
 					.show()
 					.animate({ opacity: 1 });
 				
-				sendAjax( 'engine/subscribe.php', this, followCallback );
+				sendAjax( $(this).attr('action'), this, followCallback );
 			})
 			.on('submit', '#feedback form', function(e) {
 				
