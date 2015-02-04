@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Collective
+        psr4_prefix: Collective
+        src_path: app
