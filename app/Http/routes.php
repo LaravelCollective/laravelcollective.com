@@ -15,3 +15,4 @@ Route::get('/', 'ComingSoonController@index');
 
 Route::get('coming-soon/time', 'ComingSoonController@getTime');
 Route::post('coming-soon/subscribe', 'ComingSoonController@subscribe');
+Route::post('coming-soon/contact', 'ComingSoonController@contact');

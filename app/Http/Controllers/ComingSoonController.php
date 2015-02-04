@@ -4,6 +4,7 @@ use Carbon\Carbon;
 use Collective\Http\Requests;
 use Drewm\MailChimp;
 use Illuminate\Config\Repository;
+use Illuminate\Contracts\Mail\MailQueue;
 use Illuminate\Http\Request;
 
 class ComingSoonController extends Controller {
@@ -52,16 +53,46 @@ class ComingSoonController extends Controller {
     ]);
 
     $mailChimp->call('lists/subscribe', [
-      'id'                => $this->config->get('services.mailchimp.listId'),
-      'email'             => ['email' => $request->get('email')],
-      'double_optin'      => true,
-      'update_existing'   => true,
-      'send_welcome'      => false,
+      'id'              => $this->config->get('services.mailchimp.listId'),
+      'email'           => ['email' => $request->get('email')],
+      'double_optin'    => true,
+      'update_existing' => true,
+      'send_welcome'    => false,
     ]);
 
+    return $this->successfulResponse();
+  }
+
+  /**
+   * @param MailQueue $mailer
+   * @param Request   $request
+   *
+   * @return \Symfony\Component\HttpFoundation\Response
+   */
+  public function contact(MailQueue $mailer, Request $request)
+  {
+    $this->validate($request, [
+      'name'  => 'required',
+      'email' => 'required|email',
+      'body'  => 'required',
+    ]);
+
+    $mailer->queue('emails.coming-soon.contact', $request->only('name', 'email', 'body'), function ($message)
+    {
+      $message->to('adam@laravelcollective.com', 'Adam Engebretson')->subject('Contact Form Submission from LaravelCollective.com');
+    });
+
+    return $this->successfulResponse();
+  }
+
+  /**
+   * @return \Symfony\Component\HttpFoundation\Response
+   */
+  protected function successfulResponse()
+  {
     return response()->json([
       'status' => 1,
-      'text' => false,
+      'text'   => false,
     ]);
   }
 }

@@ -6,16 +6,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <!--// NAME OF YOUR SITE //-->
-    <title>My new amazing site</title>
+    <title>Laravel Collective</title>
 
     <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
     <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
-    <!--// STYLES OF THEME //-->
     <link rel="stylesheet" type="text/css" href="/coming-soon/css/style.css">
 
-    <!--// FAVICON //-->
     <link rel="shortcut icon" href="/coming-soon/img/favicon.png">
 
     <!--[if lt IE 9]>

@@ -97,7 +97,7 @@
 					.show()
 					.animate({ opacity: 1 });
 				
-				sendAjax( 'engine/feedback.php', this, feedbackCallback );
+				sendAjax( $(this).attr('action'), this, feedbackCallback );
 			});
 	});
 	

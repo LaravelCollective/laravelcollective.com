@@ -15,10 +15,11 @@
         Want to help? We're looking for talented developers to contribute to the maintenance of these amazing packages. Drop us a line!
       </div>
 
-      <form action="#" method="post">
+      <form action="/coming-soon/contact" method="post">
+        <input type="hidden" name="_token" value="{{Session::getToken()}}"/>
         <div><input type="text" name="name" value="" placeholder="Your Name"></div>
         <div><input type="email" name="email" value="" placeholder="Your Email"></div>
-        <div><textarea name="message" placeholder="Message"></textarea></div>
+        <div><textarea name="body" placeholder="Message"></textarea></div>
         <div class="acts">
           <input type="submit" value="Send">
         </div>
