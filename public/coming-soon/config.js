@@ -13,7 +13,7 @@ window.config = {
 	end: 'February, 16 2015 10:00:00',
 	
 	// Set TRUE if you want to synchronize time with your server else FALSE
-	countdownServer: false,
+	countdownServer: true,
 	
 	// A URL to load upon expiry, replacing the current page
 	// [url OR null] e.g. "http://google.com";

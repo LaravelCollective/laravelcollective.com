@@ -1,9 +1,7 @@
 <?php namespace Collective\Http\Controllers;
 
+use Carbon\Carbon;
 use Collective\Http\Requests;
-use Collective\Http\Controllers\Controller;
-
-use Illuminate\Http\Request;
 
 class ComingSoonController extends Controller {
 
@@ -15,5 +13,21 @@ class ComingSoonController extends Controller {
   public function index()
   {
     return view('coming-soon.index');
+  }
+
+  /**
+   * @return string
+   */
+  public function getTime()
+  {
+    return Carbon::now()->format('M j, Y H:i:s O');
+  }
+
+  /**
+   *
+   */
+  public function subscribe()
+  {
+
   }
 }

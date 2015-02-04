@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'ComingSoonController@index');
+
+Route::get('coming-soon/time', 'ComingSoonController@getTime');

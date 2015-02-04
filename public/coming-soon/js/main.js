@@ -15,7 +15,6 @@
 		/* # -- SOME INITS
 		================================================== */
 		countdown.init();
-		captcha.init();
 		slider.init();
 		
 		$(window).resize();
@@ -240,7 +239,7 @@
 		    	return time;
 		    }
 		    
-		    $.ajax({url: 'engine/server-time.php', 
+		    $.ajax({url: '/coming-soon/time',
 		        async: false, dataType: 'text', 
 		        success: function( text ) { 
 		            time = new Date( text ); 
@@ -271,45 +270,6 @@
 				}
 			}
 		});
-	}
-	
-	var captcha = {
-		init: function() {
-			
-			if ( 0 == $('#feedback').length ) return false;
-			
-			this.randSet();
-			
-			$(document).on('click', '#feedback form .acts img', captcha.randSet);
-		},
-		
-		randSet: function() {
-			$.ajax({
-				url: 'engine/captcha-random.php',
-				success: function(d) { 
-					if ( true == config.debugMod ) {
-						console.log('CAPTCHA SUCCESS');	
-					}
-					
-					if ( d == 'no') {
-						$('#feedback form .acts').find('input[name="code"]').remove()
-							.end().find('img').remove();
-					} else { captcha.imageUp(); }
-				},
-				error: function( textStatus, jqXHR, errorThrown ) {
-					if ( true == config.debugMod ) {
-						console.log('CAPTCHA ERROR: ', textStatus, jqXHR, errorThrown);
-					}
-				}
-			});
-		},
-		
-		imageUp: function() {
-			var hash = Math.random() * 1000000;
-			var $feedbackCode = $('#feedback form .acts');	
-				$feedbackCode.find('img').remove();
-				$feedbackCode.find('input[name="code"]').after('<img src="engine/captcha-image.php?hash=' + hash + '">');
-		}
 	}
 	
 	var slider = {
