@@ -1,0 +1,83 @@
+// General
+$font-family: 'Nunito';
+
+// Grid
+$gridColumns: 12;
+
+// Navigation
+$navigation-color: #F0F2F1;
+$base-border-radius: 3px !default;
+$dark-gray: #333 !default;
+$large-screen: em(860) !default;
+$base-font-color: $dark-gray !default;
+
+$centered-navigation-padding: 1em;
+$centered-navigation-logo-height: 2em;
+$centered-navigation-background: $navigation-color;
+$centered-navigation-color: transparentize($base-font-color, 0.3);
+$centered-navigation-color-hover: $base-font-color;
+$centered-navigation-height: 60px;
+$centered-navigation-item-padding: 1em;
+$centered-navigation-submenu-padding: 1em;
+$centered-navigation-submenu-width: 12em;
+$centered-navigation-item-nudge: 2.2em;
+$horizontal-bar-mode: $large-screen;
+
+// Footer
+$base-spacing: 1.5em !default;
+$base-accent-color: #477DCA !default;
+$medium-screen: em(640) !default;
+$large-screen: em(860) !default;
+
+$footer-background: desaturate(darken($base-accent-color, 20%), 30%);
+$footer-color: white;
+$footer-link-color: transparentize($footer-color, 0.6);
+$footer-disclaimer-color: transparentize($footer-color, 0.6);
+
+// Hero
+$base-border-radius: 3px !default;
+$base-accent-color: #477DCA !default;
+$large-screen: em(860) !default;
+
+$hero-background-top: #7F99BE;
+$hero-background-bottom: #20392B;
+$hero-color: white;
+$gradient-angle: 10deg;
+$hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
+
+// Cards
+$base-border-color: gainsboro !default;
+$base-border-radius: 3px !default;
+$base-background-color: white !default;
+$base-spacing: 1.5em !default;
+$base-accent-color: #477DCA !default;
+$base-link-color: $base-accent-color !default;
+$dark-gray: #333 !default;
+$base-font-color: $dark-gray !default;
+
+$card-border-color: $base-border-color;
+$card-border: 1px solid $card-border-color;
+$card-background: lighten($card-border-color, 10%);
+$card-header-background: $card-background;
+$card-hover-background: lighten($card-background, 5%);
+$card-image-background: #DBD199;
+$card-image-hover-background: lighten($card-image-background, 5%);
+$card-margin: 1em;
+
+
+// Menu
+$base-accent-color: #477DCA !default;
+$dark-gray: #333 !default;
+
+$sliding-menu-border-color: $dark-gray;
+$sliding-menu-background: lighten($sliding-menu-border-color, 5%);
+$sliding-menu-color: #fff;
+$sliding-menu-border: 1px solid $sliding-menu-border-color;
+$sliding-menu-background-hover: $base-accent-color;
+$sliding-menu-color-hover: #fff;
+$sliding-menu-background-focus: lighten($sliding-menu-background, 5%);
+
+// Docs
+$docs-link-color: #F4645F;
+$docs-hashtag-color: #F4645F;
+$docs-dark-color: #555;

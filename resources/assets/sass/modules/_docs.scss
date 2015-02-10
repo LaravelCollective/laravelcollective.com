@@ -1,0 +1,46 @@
+article.docs {
+
+    @import "code";
+
+    color: $docs-dark-color;
+
+    a {
+        color: $docs-link-color;
+        text-decoration: none;
+
+        &:hover {
+            color: darken($docs-link-color, 10%);
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: 200;
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 400;
+        position: relative;
+
+        a {
+            color: $docs-dark-color;
+            position: relative;
+
+            &:before {
+                content: "#";
+                margin-left: -25px;
+                position: absolute;
+                font-size: 28px;
+                top: 5px;
+                color: $docs-hashtag-color;
+                opacity: .6;
+            }
+        }
+    }
+}

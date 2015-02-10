@@ -1,0 +1,51 @@
+.hero {
+  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em;
+
+  .hero-logo img {
+    height: 4em;
+    margin-bottom: 1em;
+  }
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    color: $hero-color;
+    margin: auto;
+    padding: 3.5em;
+    text-align: center;
+
+    .hero-copy {
+      text-align: center;
+
+      h1 {
+        font-size: 1.6em;
+        margin-bottom: 0.5em;
+
+        @include media($large-screen) {
+          font-size: 1.8em;
+        }
+      }
+
+      p {
+        font-weight: 200;
+        line-height: 1.4em;
+        margin: 0 auto 3em auto;
+
+        @include media($large-screen) {
+          font-size: 1.1em;
+          max-width: 40%;
+        }
+      }
+    }
+
+    button {
+      @include button(flat, $base-accent-color);
+      padding: 0.7em 1em;
+    }
+  }
+}

@@ -1,6 +1,8 @@
 {
   "devDependencies": {
     "gulp": "^3.8.8",
-    "laravel-elixir": "*"
+    "laravel-elixir": "*",
+    "node-bourbon": "^1.2.3",
+    "node-neat": "^1.4.2"
   }
 }
