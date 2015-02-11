@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 class IndexController extends Controller {
 
   /**
-   * @Get("/", as="index")
+   * @Get("/", as="home")
    * @return \Illuminate\View\View
    */
-  public function index()
+  public function home()
   {
     return view('index');
   }

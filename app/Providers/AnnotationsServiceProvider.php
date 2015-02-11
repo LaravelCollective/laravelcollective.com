@@ -18,6 +18,7 @@ class AnnotationsServiceProvider extends ServiceProvider {
    */
   protected $scanRoutes = [
     'Collective\Http\Controllers\IndexController',
+    'Collective\Http\Controllers\DocsController',
   ];
 
   /**
