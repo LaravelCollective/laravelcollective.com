@@ -1,7 +1,7 @@
 <?php namespace Collective\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Contracts\Filesystem\Filesystem;
+use Illuminate\Filesystem\Filesystem;
 use Illuminate\Contracts\Cache\Repository as Cache;
 
 class RefreshDocsCommand extends Command {
@@ -63,11 +63,11 @@ class RefreshDocsCommand extends Command {
       $path = base_path('resources/docs/' . $version . '/');
       $this->info('Clearing version [' . $version . '] from [' . $path . '].');
 
-      $this->files->deleteDirectory($version);
+      $this->files->deleteDirectory($path);
 
       $this->info('Cloning version [' . $version . '] into [' . $path . '].');
 
-      $this->files->makeDirectory($version);
+      $this->files->makeDirectory($path);
       exec('git clone git@github.com:LaravelCollective/docs.git -b ' . $version . ' ' . $path);
 
       $this->info('Version cloned.');

@@ -15,7 +15,7 @@ return [
   |
   */
 
-  'default' => 'docs',
+  'default' => 'local',
 
   /*
   |--------------------------------------------------------------------------
@@ -46,11 +46,6 @@ return [
     'local'     => [
       'driver' => 'local',
       'root'   => storage_path() . '/app',
-    ],
-
-    'docs'      => [
-      'driver' => 'local',
-      'root'   => base_path('resources/docs')
     ],
 
     's3'        => [
