@@ -12,8 +12,13 @@ var neat = require('node-neat').includePaths;
  |
  */
 
-elixir(function(mix) {
-    mix.sass('app.scss', null, {
-      includePaths: ['styles'].concat(neat)
-    });
+elixir(function (mix) {
+  mix.sass('app.scss', null, {
+    includePaths: ['styles'].concat(neat)
+  });
+
+  mix.scripts(['jquery.js', 'plugins/prism.js', 'collective.js'],
+    'public/js/app.js',
+    'resources/assets/js/'
+  );
 });

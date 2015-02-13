@@ -17,6 +17,12 @@
       max-height: $centered-navigation-height;
       opacity: .6;
       padding: .8em 0;
+      @include transition(all 0.3s ease-in-out);
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
     }
 
     @include media($horizontal-bar-mode) {
@@ -128,6 +134,12 @@
     margin-bottom: -$centered-navigation-logo-height / 3;
     max-height: $centered-navigation-logo-height;
     opacity: 0.6;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
   }
 
   // Sub menus
@@ -182,9 +194,9 @@
       }
     }
 
-    &:focus > .submenu,
-    &:hover > .submenu {
-      display: block;
+    &:focus > ul,
+    &:hover > ul {
+      display: block !important;
     }
 
     @include media($horizontal-bar-mode) {
@@ -193,7 +205,7 @@
     }
   }
 
-  ul.submenu {
+  li.more.nav-link > ul {
     display: none;
     padding-left: 0;
 
@@ -203,7 +215,7 @@
       top: 1.5em;
     }
 
-    .submenu {
+    ul {
       @include media($horizontal-bar-mode) {
         left: $centered-navigation-submenu-width - 0.2em;
         top: 0;

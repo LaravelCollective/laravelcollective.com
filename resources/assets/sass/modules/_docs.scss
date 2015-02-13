@@ -1,46 +1,86 @@
 article.docs {
 
-    @import "code";
+  @import "code";
 
-    color: $docs-dark-color;
+  color: $docs-dark-color;
+
+  a {
+    color: $docs-link-color;
+    text-decoration: none;
+
+    &:hover {
+      color: darken($docs-link-color, 10%);
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 200;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: 400;
+    position: relative;
 
     a {
-        color: $docs-link-color;
-        text-decoration: none;
+      color: $docs-dark-color;
+      position: relative;
 
-        &:hover {
-            color: darken($docs-link-color, 10%);
-        }
+      &:before {
+        content: "#";
+        margin-left: -25px;
+        position: absolute;
+        font-size: 28px;
+        top: 5px;
+        color: $docs-hashtag-color;
+        opacity: .6;
+      }
+    }
+  }
+
+  blockquote {
+    @include transition (all 0.2s ease-in-out);
+    @include flex(2 2 15em);
+    @include align-self(stretch);
+    background: $flex-box-background;
+    border-radius: $base-border-radius;
+    box-shadow: inset 0 0 1px $flex-box-border-color, 0 2px 4px darken($base-background-color, 10%);
+    display: block;
+    margin: $flex-box-gutter;
+    padding: 1em;
+
+    border-top: 6px solid #F4645F;
+
+    &:focus,
+    &:hover {
+      background-color: transparentize(#F4645F, 0.9);
     }
 
-    ul {
-        list-style: none;
-        padding-left: 0;
+    img {
+      display: block;
+      height: 3em;
+      margin-bottom: 2em;
+      margin: auto;
+      opacity: 0.4;
     }
 
-    h1 {
-        font-size: 48px;
-        font-weight: 200;
+    .flex-title {
+      color: $flex-box-color;
+      font-size: 1.2em;
+      font-weight: 800;
+      margin-bottom: 0.5em;
     }
 
-    h2 {
-        font-size: 36px;
-        font-weight: 400;
-        position: relative;
-
-        a {
-            color: $docs-dark-color;
-            position: relative;
-
-            &:before {
-                content: "#";
-                margin-left: -25px;
-                position: absolute;
-                font-size: 28px;
-                top: 5px;
-                color: $docs-hashtag-color;
-                opacity: .6;
-            }
-        }
+    p {
+      color: transparentize($flex-box-color, 0.1);
+      line-height: 1.5em;
+      margin: auto;
     }
+  }
 }

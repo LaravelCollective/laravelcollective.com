@@ -14,41 +14,10 @@
     <header class="centered-navigation" role="banner">
       <div class="centered-navigation-wrapper">
         <a href="javascript:void(0)" class="mobile-logo">
-        <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="Logo image">
+        <img src="/img/logo.png" alt="Logo image">
         </a>
         <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
-        <nav role="navigation">
-          <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
-            <li class="nav-link"><a href="{{route('home')}}">Home</a></li>
-            <li class="nav-link"><a href="{{route('docs')}}">Docs</a></li>
-            <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
-            <li class="nav-link logo">
-              <a href="javascript:void(0)" class="logo">
-                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="Logo image">
-              </a>
-            </li>
-            <li class="nav-link"><a href="javascript:void(0)">Testimonials</a></li>
-            <li class="nav-link more"><a href="javascript:void(0)">More</a>
-              <ul class="submenu">
-                <li><a href="javascript:void(0)">Submenu Item</a></li>
-                <li><a href="javascript:void(0)">Another Item</a></li>
-                <li class="more"><a href="javascript:void(0)">Item with submenu</a>
-                  <ul class="submenu">
-                    <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
-                    <li><a href="javascript:void(0)">Another Item</a></li>
-                  </ul>
-                </li>
-                <li class="more"><a href="javascript:void(0)">Another submenu</a>
-                  <ul class="submenu">
-                    <li><a href="javascript:void(0)">Sub-submenu</a></li>
-                    <li><a href="javascript:void(0)">An Item</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-link"><a href="javascript:void(0)">Sign up</a></li>
-          </ul>
-        </nav>
+        @include('partials.nav')
       </div>
     </header>
 
@@ -84,7 +53,7 @@
       </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="/js/app.js"></script>
     <script>
       $(document).ready(function() {
         var menuToggle = $('#js-centered-navigation-mobile-menu').unbind();

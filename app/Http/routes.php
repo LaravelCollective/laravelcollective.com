@@ -15,3 +15,9 @@ define('DEFAULT_VERSION', '5.0');
 function markdown($text) {
   return (new ParsedownExtra)->text($text);
 }
+
+View::composer('partials.nav', function($view)
+{
+  $index = app('Collective\Documentation')->getIndex(DEFAULT_VERSION);
+  $view->with('index', $index);
+});

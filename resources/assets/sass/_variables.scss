@@ -1,5 +1,5 @@
 // General
-$font-family: 'Nunito';
+$font-family: 'Roboto';
 
 // Grid
 $gridColumns: 12;
@@ -8,6 +8,7 @@ $gridColumns: 12;
 $navigation-color: #F0F2F1;
 $base-border-radius: 3px !default;
 $dark-gray: #333 !default;
+$light-gray: #DDD !default;
 $large-screen: em(860) !default;
 $base-font-color: $dark-gray !default;
 
@@ -81,3 +82,9 @@ $sliding-menu-background-focus: lighten($sliding-menu-background, 5%);
 $docs-link-color: #F4645F;
 $docs-hashtag-color: #F4645F;
 $docs-dark-color: #555;
+$flex-box-border-color: $light-gray;
+$flex-box-border: 1px solid $flex-box-border-color;
+$flex-box-background: lighten($light-gray, 10%);
+$flex-box-gutter: 0.4em;
+$flex-box-width: 18em;
+$flex-box-color: transparentize($base-font-color, 0.3);
