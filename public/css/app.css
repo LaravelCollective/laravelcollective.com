@@ -15,6 +15,9 @@ body, html {
   padding: 0;
   font-family: 'Roboto'; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300; }
+
 .row {
   max-width: 68em;
   margin-left: auto;
@@ -484,7 +487,7 @@ article.docs {
       margin: auto; }
 
 .hero {
-  background: url('https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png'), linear-gradient(10deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
+  background: url('/img/laravel.png'), linear-gradient(10deg, white, tomato), no-repeat tomato scroll;
   background-color: #324766;
   background-position: top;
   background-repeat: no-repeat;
@@ -497,7 +500,7 @@ article.docs {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
-    color: white;
+    color: #5C5D5F;
     margin: auto;
     padding: 3.5em;
     text-align: center; }
@@ -513,12 +516,14 @@ article.docs {
       text-align: center; }
       .hero .hero-inner .hero-copy h1 {
         font-size: 1.6em;
-        margin-bottom: 0.5em; }
+        margin-bottom: 0.5em;
+        color: #5C5D5F;
+        font-weight: 300; }
         @media screen and (min-width: 53.75em) {
           .hero .hero-inner .hero-copy h1 {
             font-size: 1.8em; } }
       .hero .hero-inner .hero-copy p {
-        font-weight: 200;
+        font-weight: 100;
         line-height: 1.4em;
         margin: 0 auto 3em auto; }
         @media screen and (min-width: 53.75em) {
@@ -526,7 +531,7 @@ article.docs {
             font-size: 1.1em;
             max-width: 40%; } }
     .hero .hero-inner button {
-      background-color: #477DCA;
+      background-color: #e54c50;
       border-radius: 3px;
       border: none;
       color: white;
@@ -538,10 +543,10 @@ article.docs {
       background-clip: padding-box;
       padding: 0.7em 1em; }
       .hero .hero-inner button:hover:not(:disabled) {
-        background-color: #578ad4;
+        background-color: #ec5f62;
         cursor: pointer; }
       .hero .hero-inner button:active:not(:disabled), .hero .hero-inner button:focus:not(:disabled) {
-        background-color: #3c71bb;
+        background-color: #dd3a3f;
         cursor: pointer; }
       .hero .hero-inner button:disabled {
         opacity: 0.5;
@@ -589,7 +594,7 @@ article.docs {
     max-height: 150px; }
     .card .card-image img {
       transition: all 0.2s ease-in-out;
-      background: #DBD199;
+      background: tomato;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       width: 100%; }
@@ -598,7 +603,6 @@ article.docs {
     background-color: #f6f6f6;
     border-bottom: 1px solid gainsboro;
     border-radius: 3px 3px 0 0;
-    font-weight: bold;
     line-height: 1.5em;
     padding: 0.5em 0.75em; }
   .card .card-copy {
@@ -610,7 +614,7 @@ article.docs {
   .card:focus, .card:hover {
     background-color: white; }
     .card:focus .card-image img, .card:hover .card-image img {
-      background: #e2daac; }
+      background: #ff7960; }
     .card:focus .card-header, .card:hover .card-header {
       background-color: white; }
   .card:active {
@@ -619,7 +623,7 @@ article.docs {
       background-color: #f6f6f6; }
 
 footer {
-  background: #40526b;
+  background: #d16063;
   padding: 1.5em;
   width: 100%;
   display: inline-block; }
@@ -640,6 +644,10 @@ footer {
         margin-bottom: 0; } }
   footer .footer-logo img {
     height: 1.6em; }
+  footer .copy {
+    margin-bottom: 1em;
+    line-height: 1.8em;
+    color: rgba(255, 255, 255, 0.4); }
   footer ul {
     margin-bottom: 1em; }
     @media screen and (min-width: 53.75em) {

@@ -25,30 +25,30 @@
 
     <footer role="contentinfo">
       <div class="footer-logo">
-        <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+        <img src="/img/logo-grey.png" alt="Laravel Collective">
       </div>
-      <ul>
-        <li><a href="javascript:void(0)">About</a></li>
-        <li><a href="javascript:void(0)">Contact</a></li>
-        <li><a href="javascript:void(0)">Products</a></li>
-      </ul>
+      <span class="copy">
+        Laravel Collective &copy; 2015 Adam Engebretson
+      </span>
+      {{--<ul>--}}
+        {{--<li><a href="javascript:void(0)">About</a></li>--}}
+        {{--<li><a href="javascript:void(0)">Contact</a></li>--}}
+        {{--<li><a href="javascript:void(0)">Products</a></li>--}}
+      {{--</ul>--}}
 
       <div class="footer-secondary-links">
-        <ul>
-          <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-          <li><a href="javascript:void(0)">Privacy Policy</a></li>
-        </ul>
 
         <ul class="footer-social">
-          <li><a href="javascript:void(0)">
-              <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
-            </a></li>
-          <li><a href="javascript:void(0)">
+          <li>
+            <a href="https://github.com/LaravelCollective" target="_blank">
+              <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="GitHub">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/LaraCollective" target="_blank">
               <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
-            </a></li>
-          <li><a href="javascript:void(0)">
-              <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
-            </a></li>
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
