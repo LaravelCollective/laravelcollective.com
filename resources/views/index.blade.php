@@ -1,49 +1,69 @@
 @extends('layout')
 
 @section('content')
-  <div class="hero">
-    <div class="hero-inner">
-      <a href="{{route('home')}}" class="hero-logo">
-        <img src="/img/full-logo.png" alt="Laravel Collective">
-      </a>
-      <div class="hero-copy">
-        <h1>Keeping the Laravel Legacy</h1>
-        <p>We maintain Laravel components that have been removed from the core framework, so you can continue to use the amazing Laravel features that you love.</p>
+  <div class="section" id="index-banner">
+    <div class="container">
+
+      <h1 class="header center light">Keeping Laravel Alive</h1>
+
+      <div class="row center">
+        <h5 class="header col s6 offset-s3 thin">We maintain Laravel components that have been removed from the core framework, so you can continue to use the amazing Laravel features that you love.</h5>
       </div>
 
     </div>
   </div>
 
-  <div class="row">
-    <div class="span12">
-      <h1>Who we are</h1>
-      <div class="cards">
+
+  <div class="container">
+    <div class="section">
+
+      <h3>The Collective Team</h3>
+
+      <!--   Icon Section   -->
+      <div class="row">
 
         @include('partials.card', [
           'name' => 'Adam Engebretson',
-          'image' => 'adam.jpg',
-          'bio' => 'Adam Rocks'
+          'image' => '/img/team/adam.jpg',
+          'bio' => 'Co-Founder',
+          'actions' => [
+            'GitHub' => 'https://github.com/adamgoose',
+            'Twitter' => 'https://twitter.com/artisangoose',
+          ]
         ])
 
         @include('partials.card', [
-          'name' => 'Adam Engebretson',
-          'image' => 'adam.jpg',
-          'bio' => 'Adam Rocks'
+          'name' => 'Tom Shafer',
+          'image' => '/img/team/tom.jpg',
+          'bio' => 'Co-Founder',
+          'actions' => [
+            'GitHub' => 'https://github.com/tshafer',
+            'Twitter' => 'https://twitter.com/tshafer',
+          ]
         ])
 
         @include('partials.card', [
-          'name' => 'Adam Engebretson',
-          'image' => 'adam.jpg',
-          'bio' => 'Adam Rocks'
+          'name' => 'Kayla Daniels',
+          'image' => '/img/team/kayla.jpg',
+          'bio' => 'Repository Manager',
+          'actions' => [
+            'GitHub' => 'https://github.com/kayladnls',
+            'Twitter' => 'https://twitter.com/kayladnls',
+          ]
         ])
 
         @include('partials.card', [
-          'name' => 'Adam Engebretson',
-          'image' => 'adam.jpg',
-          'bio' => 'Adam Rocks'
+          'name' => 'Robin Malfait',
+          'image' => '/img/team/robin.jpg',
+          'bio' => 'Public Relations',
+          'actions' => [
+            'GitHub' => 'https://github.com/RobinMalfait',
+            'Twitter' => 'https://twitter.com/malfaitrobin',
+          ]
         ])
 
       </div>
+
     </div>
   </div>
 @stop

@@ -1,15 +1,39 @@
 <nav role="navigation">
-  <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
-    <li class="nav-link"><a href="{{route('home')}}">Home</a></li>
-    <li class="nav-link more"><a href="javascript:void(0)">Docs</a>
-      {!! $index !!}
-    </li>
-    <li class="nav-link logo">
-      <a href="{{route('home')}}" class="logo">
-        <img src="/img/logo.png" alt="Laravel Collective">
+  <div class="container">
+    <div class="nav-wrapper">
+      <a id="logo-container" href="{{ route('home') }}" class="brand-logo">
+        <img src="/img/full-logo.png" alt="Laravel Collective" />
       </a>
-    </li>
-    <li class="nav-link"><a href="https://github.com/LaravelCollective" target="_blank">Github</a></li>
-    <li class="nav-link"><a href="https://twitter.com/LaraCollective" target="_blank">Twitter</a></li>
-  </ul>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a class="dropdown-button" href="#" data-activates="docs-dropdown">
+            Docs
+            <i class="mdi-navigation-arrow-drop-down right"></i>
+          </a>
+          <div id="docs-dropdown" class="dropdown-content no-pad-top no-pad-bot">
+            {!! $index !!}
+          </div>
+        </li>
+        <li><a href="https://github.com/LaravelCollective">GitHub</a></li>
+        <li><a href="https://twitter.com/LaraCollective">Twitter</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li>
+          <a class="dropdown-button" href="#" data-activates="docs-dropdown-mobile">
+            Docs
+            <i class="mdi-navigation-arrow-drop-down right"></i>
+          </a>
+          <div id="docs-dropdown-mobile" class="dropdown-content no-pad-top no-pad-bot">
+            {!! $index !!}
+          </div>
+        </li>
+        <li><a href="https://github.com/LaravelCollective">GitHub</a></li>
+        <li><a href="https://twitter.com/LaraCollective">Twitter</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse">
+        <i class="mdi-navigation-menu"></i>
+      </a>
+    </div>
+  </div>
 </nav>

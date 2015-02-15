@@ -1,0 +1,52 @@
+article.docs {
+
+  @import "code";
+
+  color: $docs-dark-color;
+
+  a {
+    color: $docs-link-color;
+    text-decoration: none;
+
+    &:hover {
+      color: darken($docs-link-color, 10%);
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  h1 {
+    @extend .thin;
+  }
+
+  h2 {
+    @extend .thin;
+    position: relative;
+
+    a {
+      color: $docs-dark-color;
+      position: relative;
+
+      &:before {
+        content: "#";
+        margin-left: -40px;
+        position: absolute;
+        font-size: $h2-fontsize;
+        top: 5px;
+        color: $docs-hashtag-color;
+        opacity: .6;
+      }
+    }
+  }
+
+  blockquote {
+    @extend .card-panel;
+
+    p {
+      margin: 0;
+    }
+  }
+}
