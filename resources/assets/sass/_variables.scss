@@ -1,92 +1,145 @@
-// General
-$font-family: 'Roboto';
+/*** Colors ***/
+$primary-color: #e54e52 !default;
+$primary-color-light: false !default;
+$primary-color-dark: false !default;
+@if not $primary-color-light {
+  $primary-color-light: lighten($primary-color, 15%);
+}
+@if not $primary-color-dark {
+  $primary-color-dark: darken($primary-color, 15%);
+}
 
-// Grid
-$gridColumns: 12;
+$secondary-color: #58595b !default;
+$success-color: color("green", "base") !default;
+$error-color: color("red", "base") !default;
+$link-color: color("light-blue", "darken-1") !default;
 
-// Navigation
-$navigation-color: #F0F2F1;
-$base-border-radius: 3px !default;
-$dark-gray: #333 !default;
-$light-gray: #DDD !default;
-$large-screen: em(860) !default;
-$base-font-color: $dark-gray !default;
+/*** Badges ***/
+$badge-bg-color: $secondary-color;
 
-$centered-navigation-padding: 1em;
-$centered-navigation-logo-height: 2em;
-$centered-navigation-background: $navigation-color;
-$centered-navigation-color: transparentize($base-font-color, 0.3);
-$centered-navigation-color-hover: $base-font-color;
-$centered-navigation-height: 60px;
-$centered-navigation-item-padding: 1em;
-$centered-navigation-submenu-padding: 1em;
-$centered-navigation-submenu-width: 12em;
-$centered-navigation-item-nudge: 2.2em;
-$horizontal-bar-mode: $large-screen;
+/*** Buttons ***/
+$button-bg-color-disabled: #DFDFDF !default;
+$button-color: $secondary-color !default;
+$button-color-disabled: #9F9F9F !default;
+$button-color-flat: #343434 !default;
+$button-color-raised: #FFF !default;
+$button-floating-size: 37px !default;
+$button-height: 36px !default;
+$button-font-size-shared: 1.3rem !default;
+$button-line-height: 36px !default;
+
+
+/*** Cards ***/
+$card-padding: 20px !default;
+$card-bg-color: #fff !default;
+
+/*** Collapsible ***/
+$collapsible-height: 3rem !default;
+$collapsible-header-color: #fff !default;
+$collapsible-border-color: #ddd !default;
+
+
+/*** Dropdown ***/
+$dropdown-color: $secondary-color;
+
+/*** Fonts ***/
+$roboto-font-path: "/font/roboto/" !default;
+$icons-font-path: "/font/material-design-icons/" !default;
+
+/*** Forms ***/
+// Text Inputs + Textarea
+$input-border-color: color("grey", "base") !default;
+$input-error-color: $error-color !default;
+$input-success-color: $success-color !default;
+$input-focus-color: $secondary-color !default;
+$label-font-size: .8rem !default;
+$input-disabled-color: rgba(0,0,0, .26) !default;
+
+
+// Radio Buttons
+$radio-fill-color: $secondary-color !default;
+$radio-empty-color: #5a5a5a !default;
+
+/*** Global ***/
+// Media Query Ranges
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+// Grid Variables
+$num-cols: 12 !default;
+$gutter-width: 1.5rem !default;
+$element-top-margin: $gutter-width/3 !default;
+$element-bottom-margin: ($gutter-width*2)/3 !default;
+
+/*** Navbar ***/
+$navbar-height: 64px !default;
+$navbar-height-mobile: 56px !default;
+
+
+/*** SideNav ***/
+
+
+
+/*** Tabs ***/
+$tabs-underline-color: $primary-color-light;
+$tabs-text-color: $primary-color;
+
+/*** Tables ***/
+$table-border-color: #d0d0d0;
+$table-striped-color: #f2f2f2;
+
+/*** Toasts ***/
+$toast-height: 48px !default;
+$toast-color: #323232 !default;
+$toast-text-color: #fff !default;
+
+/*** Typography ***/
+$off-black: rgba(0, 0, 0, 0.87) !default;
+// Header Styles
+$h1-fontsize: 4.2rem !default;
+$h2-fontsize: 3.56rem !default;
+$h3-fontsize: 2.28rem !default;
+$h4-fontsize: 2.28rem !default;
+$h5-fontsize: 1.64rem !default;
+$h6-fontsize: 1rem !default;
 
 // Footer
-$base-spacing: 1.5em !default;
-$base-accent-color: #e54c50 !default;
-$medium-screen: em(640) !default;
-$large-screen: em(860) !default;
+$footer-bg-color: $primary-color;
 
-$footer-background: desaturate($base-accent-color, 20%);
-$footer-color: white;
-$footer-link-color: transparentize($footer-color, 0.6);
-$footer-disclaimer-color: transparentize($footer-color, 0.6);
+// Flowtext
+$range : $large-screen - $small-screen !default;
+$intervals: 20 !default;
+$interval-size: $range / $intervals !default;
 
-// Hero
-$base-border-radius: 3px !default;
-$base-accent-color: #477DCA !default;
-$large-screen: em(860) !default;
+/*** Collections ***/
+$collection-border-color: #e0e0e0 !default;
+$collection-bg-color: #fff !default;
+$collection-active-bg-color: $secondary-color !default;
+$collection-active-color: lighten($secondary-color, 55%) !default;
+$collection-hover-bg-color: rgba(0,0,0,.08) !default;
 
-$hero-background-top: tomato;
-$hero-background-bottom: white;
-$hero-heading-color: #5C5D5F;
-$hero-copy-color: #5C5D5F;
-//$hero-copy-color: #FF5556;
-$gradient-angle: 10deg;
-$hero-image: '/img/laravel.png';
+/* Progress Bar */
+$progress-bar-color: $secondary-color;
 
-// Cards
-$base-border-color: gainsboro !default;
-$base-border-radius: 3px !default;
-$base-background-color: white !default;
-$base-spacing: 1.5em !default;
-$base-accent-color: #477DCA !default;
-$base-link-color: $base-accent-color !default;
-$dark-gray: #333 !default;
-$base-font-color: $dark-gray !default;
-
-$card-border-color: $base-border-color;
-$card-border: 1px solid $card-border-color;
-$card-background: lighten($card-border-color, 10%);
-$card-header-background: $card-background;
-$card-hover-background: lighten($card-background, 5%);
-$card-image-background: tomato;
-$card-image-hover-background: lighten($card-image-background, 5%);
-$card-margin: 1em;
-
-
-// Menu
-$base-accent-color: #477DCA !default;
-$dark-gray: #333 !default;
-
-$sliding-menu-border-color: $dark-gray;
-$sliding-menu-background: lighten($sliding-menu-border-color, 5%);
-$sliding-menu-color: #fff;
-$sliding-menu-border: 1px solid $sliding-menu-border-color;
-$sliding-menu-background-hover: $base-accent-color;
-$sliding-menu-color-hover: #fff;
-$sliding-menu-background-focus: lighten($sliding-menu-background, 5%);
-
+/*** Docs ***/
 // Docs
+$base-border-radius: 3px !default;
 $docs-link-color: #F4645F;
 $docs-hashtag-color: #F4645F;
 $docs-dark-color: #555;
-$flex-box-border-color: $light-gray;
+$flex-box-border-color: color("grey", "lighten-3");
 $flex-box-border: 1px solid $flex-box-border-color;
-$flex-box-background: lighten($light-gray, 10%);
+$flex-box-background: color("grey", "lighten-4");
 $flex-box-gutter: 0.4em;
 $flex-box-width: 18em;
-$flex-box-color: transparentize($base-font-color, 0.3);
+$flex-box-color: transparentize($secondary-color, 0.3);

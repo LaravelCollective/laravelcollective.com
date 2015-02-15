@@ -1,14 +1,10 @@
 @extends('layout')
 
 @section('content')
-  <div class="js-menu-screen sliding-menu-fade-screen"></div>
-
-  <div class="row">
-    <div class="span12">
+  <div class="section">
+    <div class="container">
       <article class="docs language-php">
-
         {!! $content !!}
-
       </article>
     </div>
   </div>

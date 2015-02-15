@@ -1,9 +1,0 @@
-.row {
-    @include outer-container;
-
-    @for $i from 1 through $gridColumns {
-        .span#{$i} {
-            @include span-columns($i);
-        }
-    }
-}

@@ -1,0 +1,13 @@
+nav {
+  background-color: color("grey", "lighten-4");
+
+  ul li a {
+    color: $secondary-color;
+  }
+
+  #logo-container img {
+    position: relative;
+    top: 5px;
+    height: $navbar-height-mobile - 10px;
+  }
+}

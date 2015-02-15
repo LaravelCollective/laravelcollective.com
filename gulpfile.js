@@ -1,5 +1,4 @@
 var elixir = require('laravel-elixir');
-var neat = require('node-neat').includePaths;
 
 /*
  |--------------------------------------------------------------------------
@@ -13,11 +12,14 @@ var neat = require('node-neat').includePaths;
  */
 
 elixir(function (mix) {
+  mix.copy('bower_components/materialize/font', 'public/font');
+  mix.copy('bower_components/materialize/dist/js/materialize.js', 'resources/assets/js/plugins/materialize.js');
+
   mix.sass('app.scss', null, {
-    includePaths: ['styles'].concat(neat)
+    includePaths: ['bower_components']
   });
 
-  mix.scripts(['jquery.js', 'plugins/prism.js', 'collective.js'],
+  mix.scripts(['jquery.js', 'plugins/prism.js', 'plugins/materialize.js', 'collective.js'],
     'public/js/app.js',
     'resources/assets/js/'
   );

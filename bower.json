@@ -1,0 +1,10 @@
+{
+  "name": "laravelcollective.com",
+  "homepage": "https://github.com/LaravelCollective/laravelcreative.com",
+  "authors": [
+    "Adam Engebretson <adam@enge.me>"
+  ],
+  "dependencies": {
+    "materialize": "~0.95.2"
+  }
+}

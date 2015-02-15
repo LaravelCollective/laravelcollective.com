@@ -1,13 +1,22 @@
-<div class="card">
-  <div class="card-image">
-    <img src="/img/team/{{$image}}" alt="{{$name}}">
-  </div>
-  <div class="card-header">
-    {{$name}}
-  </div>
-  <div class="card-copy">
-    <p>
-      {{$bio}}
-    </p>
+<div class="col s12 m3">
+  <div class="card grey lighten-4">
+    <div class="card-image">
+      <img src="{{$image}}">
+    </div>
+    <div class="card-content center">
+      <div class="name">
+        {{$name}}
+      </div>
+      <p>
+        {{$bio}}
+      </p>
+    </div>
+    @if(isset($actions) && count($actions))
+      <div class="card-action">
+        @foreach($actions as $text => $link)
+          <a href="{{$link}}" target="_blank" title="{{$name}}">{{$text}}</a>
+        @endforeach
+      </div>
+    @endif
   </div>
 </div>
