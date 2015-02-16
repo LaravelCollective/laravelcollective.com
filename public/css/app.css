@@ -2023,7 +2023,7 @@ i {
   i.large {
     font-size: 6rem; }
 
-img.responsive-img, video.responsive-video {
+img.responsive-img, #index-banner img, video.responsive-video {
   max-width: 100%;
   height: auto; }
 
@@ -5001,7 +5001,19 @@ nav {
   nav #logo-container img {
     position: relative;
     top: 5px;
-    height: 46px; }
+    height: 46px;
+    -ms-filter: "progid:DXImageTransform@mixin Microsoft@mixin Alpha(Opacity=${iefactor})";
+    filter: "alpha(opacity=(${iefactor}))";
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    transition: 1s; }
+    nav #logo-container img:hover, nav #logo-container img:focus {
+      -ms-filter: "progid:DXImageTransform@mixin Microsoft@mixin Alpha(Opacity=${iefactor})";
+      filter: "alpha(opacity=(${iefactor}))";
+      -moz-opacity: 1;
+      -khtml-opacity: 1;
+      opacity: 1; }
 
 @font-face {
   font-family: "Roboto";
@@ -5091,7 +5103,7 @@ strong {
 small {
   font-size: 75%; }
 
-.light, footer.page-footer .footer-copyright, h1, h2, h3, h4, h5, h6, .card .card-content .name {
+.light, footer.page-footer .footer-copyright, .card .card-content .name {
   font-weight: 300; }
 
 .flow-text {
@@ -5223,7 +5235,7 @@ small {
     .flow-text {
       line-height: 2.88rem; } }
 
-.thin, article.docs h1, article.docs h2 {
+.thin, h1, h2, h3, h4, h5, h6, *, article.docs h1, article.docs h2 {
   font-weight: 100; }
 
 .card-panel, article.docs blockquote {
@@ -7887,11 +7899,9 @@ article.docs {
     margin: 0; }
 
 #index-banner {
-  padding: 150px 0;
-  background-image: url(/img/laravel.png);
-  background-size: cover; }
-  #index-banner h1.header {
-    color: #e54e52; }
+  padding: 150px 0; }
+  #index-banner img {
+    padding-bottom: 30px; }
 
 .logo-sm {
   width: 30px;

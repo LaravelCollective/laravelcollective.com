@@ -11,5 +11,7 @@ $(function()
     belowOrigin: true
   });
 
-  $(".button-collapse").sideNav();
+  $('.button-collapse').sideNav();
+
+  $('.tooltipped').tooltip();
 });

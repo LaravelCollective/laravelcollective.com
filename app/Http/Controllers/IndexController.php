@@ -13,6 +13,17 @@ class IndexController extends Controller {
    */
   public function home()
   {
-    return view('index');
+    return view('index', [
+      'hideLogo' => true,
+    ]);
+  }
+
+  /**
+   * @Get("about", as="about")
+   * @return \Illuminate\View\View
+   */
+  public function about()
+  {
+    return view('about');
   }
 }

@@ -1,11 +1,9 @@
 #index-banner {
   padding: 150px 0;
-//  background-color: lighten($primary-color, 35%);
-  background-image: url(/img/laravel.png);
-  background-size: cover;
 
-  h1.header {
-    color: $primary-color;
+  img {
+    @extend .responsive-img;
+    padding-bottom: 30px;
   }
 }
 

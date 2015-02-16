@@ -9,5 +9,12 @@ nav {
     position: relative;
     top: 5px;
     height: $navbar-height-mobile - 10px;
+    @include opacity(0.5);
+    @include transition(1s);
+
+    &:hover,
+    &:focus {
+      @include opacity(1);
+    }
   }
 }
