@@ -8,4 +8,6 @@
       </article>
     </div>
   </div>
+
+  @include('partials.footer')
 @stop
