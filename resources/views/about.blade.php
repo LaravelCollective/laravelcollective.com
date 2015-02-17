@@ -7,9 +7,22 @@
       <h2 class="center">About The Collective</h2>
       <div class="divider"></div>
 
-      <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu.</p>
+      <p>
+        The Laravel Collective is a community organization designed to maintain components that have been removed from the <a href="http://laravel.com" target="_blank">Laravel Framework</a> core. We love Laravel, and all of its features. However, as Taylor Otwell continues to grow the framework, changes must be made. Since Laravel has such a large community surrounding it, it goes without saying that components that are removed from the core framework will be missed by several developers. That's where we come in.
+      </p>
 
-      <p>Oh wait, I was supposed to write real copy here? Yeah, I'll just do it tomorrow...</p>
+      <p>
+        We believe that maintaining these components will help support Laravel's future. By keeping every part of Laravel alive for its entire lifespan, we can help keep developers loyal to the framework.
+      </p>
+
+      <p>
+        The Laravel Collective website is not meant to be a marketing website. It's meant to be a documentation website, similar to
+        <a target="_blank" href="http://laravel.com">Laravel.com</a>. You can keep coming back to this website for the latest up-to-date documentation (refreshed every 5 minutes), as well as new packages to be maintained by the Laravel Collective.
+      </p>
+
+      <p>
+        Lastly, we want to emphasize the "community" in our title: "community organization". This project seeks to relieve Taylor of having to maintain these components that he no longer considers core-worthy. We love Pull Requests. We love Issues. We love feedback! If you run into any issues, or have an idea of a way that we can make any of these components better, please don't hesitate to share on <a target="_blank" href="https://github.com/LaravelCollective">GitHub.</a> We look forward to continuing the Laravel Legacy here, at the Laravel Collective.
+      </p>
 
       <h2 class="center">The Collective Team</h2>
       <div class="divider"></div>
@@ -51,7 +64,7 @@
         @include('partials.card', [
           'name' => 'Robin Malfait',
           'image' => '/img/team/robin.jpg',
-          'bio' => 'Public Relations',
+          'bio' => 'Repository Manager',
           'actions' => [
             'GitHub' => 'https://github.com/RobinMalfait',
             'Twitter' => 'https://twitter.com/malfaitrobin',
