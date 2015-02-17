@@ -2,7 +2,7 @@
   <div class="container">
     <div class="nav-wrapper">
       @if( ! isset($hideLogo) || $hideLogo == false)
-        <a id="logo-container" href="{{ route('home') }}" class="brand-logo">
+        <a id="logo-container" href="{{ route('home') }}" class="brand-logo" title="Laravel Collective">
           <img src="/img/full-logo.png" alt="Laravel Collective" />
         </a>
       @endif
@@ -17,8 +17,8 @@
           </div>
         </li>
         <li><a href="{{route('about')}}">About</a></li>
-        <li><a href="https://github.com/LaravelCollective">GitHub</a></li>
-        <li><a href="https://twitter.com/LaraCollective">Twitter</a></li>
+        <li><a href="https://github.com/LaravelCollective" title="GitHub">GitHub</a></li>
+        <li><a href="https://twitter.com/LaraCollective" title="Twitter">Twitter</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -32,8 +32,8 @@
           </div>
         </li>
         <li><a href="{{route('about')}}">About</a></li>
-        <li><a href="https://github.com/LaravelCollective">GitHub</a></li>
-        <li><a href="https://twitter.com/LaraCollective">Twitter</a></li>
+        <li><a href="https://github.com/LaravelCollective" title="GitHub">GitHub</a></li>
+        <li><a href="https://twitter.com/LaraCollective" title="Twitter">Twitter</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse">
         <i class="mdi-navigation-menu"></i>
