@@ -18,12 +18,7 @@ article.docs {
     padding-left: 0;
   }
 
-  h1 {
-    @extend .thin;
-  }
-
   h2 {
-    @extend .thin;
     position: relative;
 
     a {
@@ -38,6 +33,7 @@ article.docs {
         top: 5px;
         color: $docs-hashtag-color;
         opacity: .6;
+        @extend .thin;
       }
     }
   }
