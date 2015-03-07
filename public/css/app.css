@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,200italic,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400);
 .materialize-red.lighten-5 {
   background-color: #fdeaeb !important; }
 
@@ -5289,7 +5289,7 @@ h1 {
   font-weight: 200; }
 
 h2 {
-  font-weight: 400; }
+  font-weight: 300; }
 
 .thin, article.docs h2 a:before {
   font-weight: 200; }
