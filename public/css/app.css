@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,200italic,400italic,700italic);
 .materialize-red.lighten-5 {
   background-color: #fdeaeb !important; }
 
@@ -5284,8 +5285,14 @@ small {
     .flow-text {
       line-height: 2.88rem; } }
 
-.thin, h1, h2, h3, h4, h5, h6, *, article.docs h1, article.docs h2 {
-  font-weight: 100; }
+h1 {
+  font-weight: 200; }
+
+h2 {
+  font-weight: 400; }
+
+.thin, article.docs h2 a:before {
+  font-weight: 200; }
 
 .card-panel, article.docs blockquote {
   padding: 20px;
@@ -7979,6 +7986,10 @@ article.docs {
         opacity: .6; }
   article.docs blockquote p {
     margin: 0; }
+
+html, body {
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased; }
 
 #index-banner {
   padding: 150px 0; }
