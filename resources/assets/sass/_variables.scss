@@ -145,3 +145,8 @@ $flex-box-background: color("grey", "lighten-4");
 $flex-box-gutter: 0.4em;
 $flex-box-width: 18em;
 $flex-box-color: transparentize($secondary-color, 0.3);
+
+// Resetting colors
+$secondary-color: $docs-dark-color !important;
+$button-color: $docs-dark-color;
+$dropdown-color: $docs-dark-color;

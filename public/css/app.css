@@ -2295,7 +2295,7 @@ td, th {
   .collection a.collection-item {
     display: block;
     transition: 0.25s;
-    color: #26a69a; }
+    color: #555 !important; }
     .collection a.collection-item:not(.active):hover {
       background-color: #ddd; }
   .collection.with-header .collection-header {
@@ -2307,7 +2307,7 @@ td, th {
 
 .secondary-content {
   float: right;
-  color: #26a69a; }
+  color: #555 !important; }
 
 span.badge {
   min-width: 3rem;
@@ -5047,7 +5047,7 @@ nav {
 nav {
   background-color: #f5f5f5; }
   nav ul li a {
-    color: #26a69a; }
+    color: #555 !important; }
   nav #logo-container img {
     position: relative;
     top: 5px;
@@ -5561,13 +5561,13 @@ ul.tabs li.tab {
 .btn, .btn-large {
   text-decoration: none;
   color: #FFF;
-  background-color: #26a69a;
+  background-color: #555;
   text-align: center;
   letter-spacing: .5px;
   transition: .2s ease-out;
   cursor: pointer; }
   .btn:hover, .btn-large:hover {
-    background-color: #2bbbad; }
+    background-color: #626262; }
 
 .btn-floating {
   display: inline-block;
@@ -5578,7 +5578,7 @@ ul.tabs li.tab {
   height: 37px;
   line-height: 37px;
   padding: 0;
-  background-color: #26a69a;
+  background-color: #555;
   border-radius: 50%;
   background-clip: padding-box;
   transition: 0.3s;
@@ -5654,7 +5654,7 @@ ul.tabs li.tab {
     .dropdown-content li > a, .dropdown-content li > span {
       display: block;
       padding: 1rem 1rem;
-      color: #26a69a; }
+      color: #555; }
 
 /*!
  * Waves v0.6.0
@@ -5907,7 +5907,7 @@ select:focus {
 
 button:focus {
   outline: none;
-  background-color: #2ab7a9; }
+  background-color: #5f5f5f; }
 
 label {
   font-size: 0.8rem;
