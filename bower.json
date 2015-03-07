@@ -5,6 +5,6 @@
     "Adam Engebretson <adam@enge.me>"
   ],
   "dependencies": {
-    "materialize": "0.95.2"
+    "materialize": "~0.95.2"
   }
 }
