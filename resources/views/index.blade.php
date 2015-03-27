@@ -19,10 +19,10 @@
         <a class="btn-large" href="{{route('docs.show', [DEFAULT_VERSION, 'annotations'])}}">Annotations</a>
       </div>
       <div class="col s12 m4">
-        <a class="btn-large" href="{{route('docs.show', [DEFAULT_VERSION, 'html'])}}">Forms & HTML</a>
+        <a class="btn-large" href="{{route('docs.show', [DEFAULT_VERSION, 'html'])}}">Forms &amp; HTML</a>
       </div>
       <div class="col s12 m4">
-        <a class="btn-large tooltipped disabled" href="#" data-position="top" data-tooltip="Coming Soon">Remote (SSH)</a>
+        <a class="btn-large" href="{{route('docs.show', [DEFAULT_VERSION, 'ssh'])}}">Remote (SSH)</a>
       </div>
     </div>
   </div>
