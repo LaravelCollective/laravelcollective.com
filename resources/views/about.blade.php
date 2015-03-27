@@ -52,16 +52,6 @@
         ])
 
         @include('partials.card', [
-          'name' => 'Kayla Daniels',
-          'image' => '/img/team/kayla.jpg',
-          'bio' => 'Repository Manager',
-          'actions' => [
-            'GitHub' => 'https://github.com/kayladnls',
-            'Twitter' => 'https://twitter.com/kayladnls',
-          ]
-        ])
-
-        @include('partials.card', [
           'name' => 'Robin Malfait',
           'image' => '/img/team/robin.jpg',
           'bio' => 'Repository Manager',

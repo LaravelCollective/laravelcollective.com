@@ -17,8 +17,9 @@
           </div>
         </li>
         <li><a href="{{route('about')}}">About</a></li>
-        <li><a href="https://github.com/LaravelCollective" title="GitHub">GitHub</a></li>
-        <li><a href="https://twitter.com/LaraCollective" title="Twitter">Twitter</a></li>
+        <li><a href="http://laravel.com" title="Laravel" target="_blank">Laravel</a></li>
+        <li><a href="https://github.com/LaravelCollective" title="GitHub" target="_blank">GitHub</a></li>
+        <li><a href="https://twitter.com/LaraCollective" title="Twitter" target="_blank">Twitter</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -32,8 +33,9 @@
           </div>
         </li>
         <li><a href="{{route('about')}}">About</a></li>
-        <li><a href="https://github.com/LaravelCollective" title="GitHub">GitHub</a></li>
-        <li><a href="https://twitter.com/LaraCollective" title="Twitter">Twitter</a></li>
+        <li><a href="http://laravel.com" title="Laravel" target="_blank">Laravel</a></li>
+        <li><a href="https://github.com/LaravelCollective" title="GitHub" target="_blank">GitHub</a></li>
+        <li><a href="https://twitter.com/LaraCollective" title="Twitter" target="_blank">Twitter</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse">
         <i class="mdi-navigation-menu"></i>
