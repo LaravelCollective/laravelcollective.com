@@ -14,4 +14,10 @@ $(function()
   $('.button-collapse').sideNav();
 
   $('.tooltipped').tooltip();
+
+  $('.to-top').on('click', function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 800);
+  });
 });

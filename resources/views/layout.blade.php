@@ -14,6 +14,8 @@
   <body>
     @include('partials.nav')
 
+    <button class="btn to-top">^</button>
+
     @yield('content')
 
     <script src="/js/app.js"></script>
