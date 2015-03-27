@@ -8,15 +8,17 @@
     <meta name="keywords" content="laravel collective,laravel,laravel php,php,framework,components,community organization"/>
     <meta name="description" content="We maintain Laravel components that have been removed from the core framework, so you can continue to use the amazing Laravel features that you love."/>
 
-    <link href="/css/app.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{{ elixir('css/app.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
     @yield('styles')
   </head>
   <body>
     @include('partials.nav')
 
+    <button class="btn to-top">^</button>
+
     @yield('content')
 
-    <script src="/js/app.js"></script>
+    <script src="{{ elixir('js/app.js') }}"></script>
     @yield('scripts')
     <script>
       !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(

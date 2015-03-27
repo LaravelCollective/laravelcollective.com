@@ -14,4 +14,23 @@ $(function()
   $('.button-collapse').sideNav();
 
   $('.tooltipped').tooltip();
+
+  // To Top
+  var $toTop = $('.to-top');
+
+  $(window).scroll(function (event) {
+    var scroll = $(this).scrollTop();
+
+    if (scroll > 500) {
+      $toTop.fadeIn();
+    } else {
+      $toTop.fadeOut();
+    }
+  });
+
+  $toTop = $('.to-top').on('click', function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 800);
+  });
 });
