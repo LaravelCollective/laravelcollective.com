@@ -12,6 +12,7 @@ class RefreshDocsCommand extends Command {
   protected $versions = [
     'master',
     '5.0',
+    '5.1',
   ];
 
   /**

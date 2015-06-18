@@ -63,7 +63,7 @@ class DocsController extends Controller {
    */
   protected function isVersion($version)
   {
-    return in_array($version, ['master', '5.0']);
+    return in_array($version, ['master', '5.0', '5.1']);
   }
 
   /**
@@ -76,6 +76,7 @@ class DocsController extends Controller {
     return [
       'master' => 'Master',
       '5.0' => '5.0',
+      '5.1' => '5.1',
     ];
   }
 
