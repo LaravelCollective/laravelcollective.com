@@ -26,7 +26,7 @@ return [
   |
   */
 
-  'url'             => 'http://laravelcreative.com',
+  'url'             => 'http://laravelcollective.com',
 
   /*
   |--------------------------------------------------------------------------
