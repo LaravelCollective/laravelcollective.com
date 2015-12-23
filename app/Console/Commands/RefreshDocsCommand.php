@@ -13,6 +13,7 @@ class RefreshDocsCommand extends Command {
     'master',
     '5.0',
     '5.1',
+    '5.2',
   ];
 
   /**

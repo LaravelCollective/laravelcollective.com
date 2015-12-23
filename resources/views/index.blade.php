@@ -15,15 +15,23 @@
 
   <div class="container">
     <div class="row center">
-      <div class="col s12 m4">
+      <div class="col s12 m1">&nbsp;</div>
+      <div class="col s12 m2">
         <a class="btn-large" href="{{route('docs.show', [DEFAULT_VERSION, 'annotations'])}}">Annotations</a>
       </div>
-      <div class="col s12 m4">
-        <a class="btn-large" href="{{route('docs.show', [DEFAULT_VERSION, 'html'])}}">Forms &amp; HTML</a>
+      <div class="col s12 m2">
+        <a class="btn-large" href="{{route('docs.show', [DEFAULT_VERSION, 'html'])}}">HTML &amp; Forms</a>
       </div>
-      <div class="col s12 m4">
+      <div class="col s12 m2">
         <a class="btn-large" href="{{route('docs.show', [DEFAULT_VERSION, 'ssh'])}}">Remote (SSH)</a>
       </div>
+      <div class="col s12 m2">
+        <a class="btn-large" href="{{route('docs.show', [DEFAULT_VERSION, 'iron-queue'])}}">Iron Queue</a>
+      </div>
+      <div class="col s12 m2">
+        <a class="btn-large" href="{{route('docs.show', [DEFAULT_VERSION, 'bus'])}}">Command Bus</a>
+      </div>
+      <div class="col s12 m1">&nbsp;</div>
     </div>
   </div>
 
