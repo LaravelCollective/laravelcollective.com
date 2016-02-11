@@ -77,7 +77,11 @@ class RefreshDocsCommand extends Command {
 
       $this->info('Extracting version [' . $version . '] into [' . $path . '].');
 
-      exec('unzip ' . $zip . ' -d ' . $docsPath);
+      $archive = new \ZipArchive();
+      $archive->open($zip);
+      $archive->extractTo($docsPath);
+      $archive->close();
+
       $this->files->move($docsPath . 'docs-' . $version, $path);
       $this->files->delete($zip);
 
