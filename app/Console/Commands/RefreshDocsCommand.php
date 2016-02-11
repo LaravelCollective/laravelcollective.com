@@ -62,15 +62,24 @@ class RefreshDocsCommand extends Command {
   {
     foreach($this->versions as $version)
     {
+      $zip = base_path('resources/docs/' . $version . '.zip');
+      $docsPath = base_path('resources/docs/');
       $path = base_path('resources/docs/' . $version . '/');
+
       $this->info('Clearing version [' . $version . '] from [' . $path . '].');
 
+      $this->files->delete($zip);
       $this->files->deleteDirectory($path);
 
-      $this->info('Cloning version [' . $version . '] into [' . $path . '].');
+      $this->info('Downloading version [' . $version . '] archive.');
 
-      $this->files->makeDirectory($path);
-      exec('git clone git@github.com:LaravelCollective/docs.git -b ' . $version . ' ' . $path);
+      exec('wget -O ' . $zip . ' https://github.com/LaravelCollective/docs/archive/' . $version . '.zip');
+
+      $this->info('Extracting version [' . $version . '] into [' . $path . '].');
+
+      exec('unzip ' . $zip . ' -d ' . $docsPath);
+      $this->files->move($docsPath . 'docs-' . $version, $path);
+      $this->files->delete($zip);
 
       $this->info('Version cloned.');
     }
