@@ -61,6 +61,16 @@
           ]
         ])
 
+        @include('partials.card', [
+          'name' => 'Matt Lantz',
+          'image' => '/img/team/matt.jpg',
+          'bio' => 'Developer',
+          'actions' => [
+            'GitHub' => 'https://github.com/mlantz',
+            'Twitter' => 'https://twitter.com/Mattylantz',
+          ]
+        ])
+
       </div>
 
     </div>

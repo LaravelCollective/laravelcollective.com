@@ -1,4 +1,4 @@
-<div class="col s12 m4">
+<div class="col s12 m6">
   <div class="card grey lighten-4">
     <div class="card-image">
       <img src="{{$image}}">
