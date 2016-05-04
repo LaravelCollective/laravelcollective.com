@@ -3,5 +3,3 @@
 .env
 .idea
 bower_components
-/public/js/
-/public/css/
