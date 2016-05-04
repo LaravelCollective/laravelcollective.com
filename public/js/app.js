@@ -5723,6 +5723,14 @@ $(function()
     $(this).parent().next('h2').wrapInner(anchor);
   });
 
+  $('ul.version-tabs').tabs();
+  $('ul.version-tabs li a').each(function(){
+    var _url = $(this).attr('data-url');
+    $(this).click(function(){
+        window.location = _url;
+    });
+  });
+
   $('.dropdown-button').dropdown({
     constrain_width: false,
     belowOrigin: true
