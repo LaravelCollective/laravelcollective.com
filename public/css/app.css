@@ -5881,7 +5881,6 @@ li.no-padding {
   padding: 0 !important; }
 
 .materialboxed {
-  cursor: -webkit-zoom-in;
   cursor: zoom-in;
   position: relative;
   transition: opacity 0.4s; }
@@ -5895,7 +5894,6 @@ li.no-padding {
       opacity: 0.8; }
 
 .materialboxed.active {
-  cursor: -webkit-zoom-out;
   cursor: zoom-out; }
 
 #materialbox-overlay {
@@ -7775,7 +7773,6 @@ pre[class*="language-"] {
   -moz-tab-size: 4;
   tab-size: 4;
   -webkit-hyphens: none;
-  -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none; }
 
@@ -7995,7 +7992,6 @@ article.docs {
     -moz-tab-size: 4;
     tab-size: 4;
     -webkit-hyphens: none;
-    -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none; }
   article.docs .dark-code pre[class*="language-"] {
@@ -8087,5 +8083,8 @@ html, body {
   padding: 0;
   vertical-align: middle;
   padding-top: 20px; }
+
+.pointer {
+  cursor: pointer; }
 
 /*# sourceMappingURL=app.css.map */
