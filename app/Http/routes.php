@@ -3,7 +3,9 @@
 /**
  * Set the default documentation version...
  */
-define('DEFAULT_VERSION', config('versions.latest'));
+if (!defined('DEFAULT_VERSION')) {
+    define('DEFAULT_VERSION', config('versions.latest'));
+}
 
 /**
  * Convert some Markdown to html...
@@ -12,8 +14,10 @@ define('DEFAULT_VERSION', config('versions.latest'));
  *
  * @return mixed|string
  */
-function markdown($text) {
-  return (new ParsedownExtra)->text($text);
+if (!function_exists('markdown')) {
+    function markdown($text) {
+      return (new ParsedownExtra)->text($text);
+    }
 }
 
 View::composer('partials.nav', function($view)
