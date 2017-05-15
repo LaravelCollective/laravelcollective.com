@@ -63,7 +63,7 @@ class DocsController extends Controller {
    */
   protected function isVersion($version)
   {
-    return in_array($version, ['master', '5.0', '5.1', '5.2', '5.3', '5.4']);
+    return in_array($version, array_keys(config('versions.collection')));
   }
 
   /**
@@ -73,14 +73,7 @@ class DocsController extends Controller {
    */
   protected function getDocVersions()
   {
-    return [
-      'master' => 'Master',
-      '5.0' => '5.0',
-      '5.1' => '5.1',
-      '5.2' => '5.2',
-      '5.3' => '5.3',
-      '5.4' => '5.4',
-    ];
+    return config('versions.collection');
   }
 
 }

@@ -9,14 +9,7 @@ class RefreshDocsCommand extends Command {
   /**
    * @var array
    */
-  protected $versions = [
-    'master',
-    '5.0',
-    '5.1',
-    '5.2',
-    '5.3',
-    '5.4',
-  ];
+  protected $versions = [];
 
   /**
    * The console command name.
@@ -53,6 +46,8 @@ class RefreshDocsCommand extends Command {
     $this->files = $files;
     $this->cache = $cache;
     parent::__construct();
+
+    $this->versions = array_keys(config('versions.collection'));
   }
 
   /**

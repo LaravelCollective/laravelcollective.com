@@ -3,7 +3,7 @@
 /**
  * Set the default documentation version...
  */
-define('DEFAULT_VERSION', '5.4');
+define('DEFAULT_VERSION', config('versions.latest'));
 
 /**
  * Convert some Markdown to html...
