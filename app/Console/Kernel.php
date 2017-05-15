@@ -11,7 +11,6 @@ class Kernel extends ConsoleKernel {
    * @var array
    */
   protected $commands = [
-    'Collective\Console\Commands\Inspire',
     'Collective\Console\Commands\RefreshDocsCommand',
   ];
 

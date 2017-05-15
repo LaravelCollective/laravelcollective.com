@@ -17,19 +17,19 @@
     <div class="row center">
       <div class="col s12 m1">&nbsp;</div>
       <div class="col s12 m2">
-        <a class="btn-large" href="{{route('docs.show', [DEFAULT_VERSION, 'annotations'])}}">Annotations</a>
+        <a class="btn-large" href="{{route('docs.show', ['master', 'annotations'])}}">Annotations</a>
       </div>
       <div class="col s12 m2">
-        <a class="btn-large" href="{{route('docs.show', [DEFAULT_VERSION, 'html'])}}">HTML &amp; Forms</a>
+        <a class="btn-large" href="{{route('docs.show', ['master', 'html'])}}">HTML &amp; Forms</a>
       </div>
       <div class="col s12 m2">
-        <a class="btn-large" href="{{route('docs.show', [DEFAULT_VERSION, 'ssh'])}}">Remote (SSH)</a>
+        <a class="btn-large" href="{{route('docs.show', ['master', 'ssh'])}}">Remote (SSH)</a>
       </div>
       <div class="col s12 m2">
-        <a class="btn-large" href="{{route('docs.show', [DEFAULT_VERSION, 'iron-queue'])}}">Iron Queue</a>
+        <a class="btn-large" href="{{route('docs.show', ['master', 'iron-queue'])}}">Iron Queue</a>
       </div>
       <div class="col s12 m2">
-        <a class="btn-large" href="{{route('docs.show', [DEFAULT_VERSION, 'bus'])}}">Command Bus</a>
+        <a class="btn-large" href="{{route('docs.show', ['master', 'bus'])}}">Command Bus</a>
       </div>
       <div class="col s12 m1">&nbsp;</div>
     </div>

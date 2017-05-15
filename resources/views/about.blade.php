@@ -63,7 +63,7 @@
 
         @include('partials.card', [
           'name' => 'Matt Lantz',
-          'image' => '/img/team/matt.jpg',
+          'image' => 'https://www.gravatar.com/avatar/'.md5('mattlantz@gmail.com').'?s=600',
           'bio' => 'Developer',
           'actions' => [
             'GitHub' => 'https://github.com/mlantz',
